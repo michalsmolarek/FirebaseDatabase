@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="io.github.michalsmolarek.firebasedatabase.AddTrackActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:text="Artysta"
+        android:id="@+id/textViewArtistName"
+        />
+
+    <EditText
+        android:id="@+id/editTextNameTrack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nazwa piosenki"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20sp"
+        android:gravity="left"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:layout_gravity="right"
+        android:textSize="20sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/seekBarRating"
+        android:max="5"
+        android:backgroundTint="#000"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonAddTrack"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Dodaj"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Piosenki"
+        android:textSize="20dp"/>
+
+    <ListView
+        android:id="@+id/artistTracks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buttonAddArtist"
+        android:layout_centerHorizontal="true" />
+
+</LinearLayout>

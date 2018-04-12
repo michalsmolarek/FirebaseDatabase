@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FirebaseDatabase</string>
+    <array name="gatunki">
+        <item>Rock</item>
+        <item>Rap</item>
+        <item>Reggae</item>
+        <item>Metal</item>
+        <item>Disco Polo</item>
+        <item>Country</item>
+    </array>
+</resources>
